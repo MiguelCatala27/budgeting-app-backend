@@ -43,9 +43,5 @@ transactions.get("/", (req, res) => {
   res.json(transactionArray);
 });
 
-transactions.post("/", (req, res) => {
-  transactionArray.push(req.body);
-  res.json(transactionArray[transactionArray.length - 1]);
-});
 
 module.exports = transactions;
